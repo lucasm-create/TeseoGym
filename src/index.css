@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-display: "Anton", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-brand-yellow: #E2FF00;
+  --color-brand-black: #000000;
+  --color-brand-dark: #131313;
+  --color-brand-surface: #1A1A1A;
+  --color-brand-border: #353535;
+  --color-brand-text-muted: #e2e2e2;
+}
+
+body {
+  background-color: var(--color-brand-dark);
+  color: white;
+  font-family: var(--font-body);
+}
+
+h1, h2 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  text-shadow: -2px 0 0 rgba(0, 255, 255, 0.5), 2px 0 0 rgba(255, 0, 0, 0.5);
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+}
+
+/* Base resets for inputs */
+input, textarea {
+  font-family: var(--font-body);
+}
+input::placeholder, textarea::placeholder {
+  font-family: var(--font-mono);
+  color: #656464;
+}
